@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+  <head>
+    <title>Apli</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+        function RegisterClick(){
+                var FirstName =document.getElementById("txtFirstName").value;
+                var MiddleName =document.getElementById("txtMiddleName").value;
+                var LastName=document.getElementById("txtLastName").value;
+                var MobileNo=document.getElementById("Mobile").value;
+                var Email=document.getElementById("Email").value;
+                var Male =document.getElementById("optMale")   
+                var Female =document.getElementById("optFemale")
+                var Others =document.getElementById("optOthers")
+                var Country=document.getElementById("txtCountry").value;
+                var State=document.getElementById("txtState").value;
+                var District=document.getElementById("txtDistrict").value;
+                if(Male.checked)
+                    var gender=Male.value;
+                if(Female.checked)
+                    var gender=Female.value;
+                if(Others.checked)
+                    var gender=Others.value;
+                 
+                var x=alert("Your Application is Submitted")
+                
+            }
+
+    </script>
+    <style>
+        body{
+            margin: 0;
+            
+        }
+        .head-items{
+                padding: 10px;
+                padding-right: 20px;
+                text-align: center;
+                font-size: 25px;
+                color:black;
+            }
+            header{
+                margin-top:0px;
+                padding:15px;
+                text-align:center;
+            }
+            
+            .marq{
+                padding: 10px;
+                font-size:20px;
+                background-color:rgb(111, 231, 111);
+                margin-bottom:0px; 
+            }
+            .foot{
+                padding: 50px;
+                
+                
+            }
+            #register-id{
+                width: 500px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 25px;
+                
+            }
+            td{
+                padding: 8px;
+                font-size: 25px;
+            }
+            table{
+                margin-right: auto;
+                margin-left: auto;
+            }
+            input-items{
+                padding: 8px;
+
+            }
+    </style>
+
+</head>
+
+  <body background="/trial/pic/itachi.jpg">
+    <marquee class="marq">Hurry up!!!.Only few more Applications left!  <a <link rel="stylesheet" href="/trial/Application.html">link</a></marquee>
+        <header>
+            <span style="padding-right:20px;" ><a class="head-items" href="/trial/trial.html">Home</a></span>
+            <span style="padding-right:20px;" ><a class="head-items" href="/trial/About_us.html">About us</a></span>
+            <span style="padding-right:20px;" ><a class="head-items" href="/trial/Application.html">Applications</a></span>
+            <span style="padding-right:20px;" ><a class="head-items" href="/trial/login.html">Login/Sign Up</a></span>
+        </header>
+        <form id="register-id">
+            <table>
+                <tr>
+                    <td>First Name: </td>
+                    <td><input id="txtFirstName" class="input-items" type="text" name="Name" placeholder="First-Name" autofocus required></td>
+                </tr>
+                <tr>
+                    <td>Middle Name: </td>
+                    <td><input id="txtMiddleName" class="input-items" type="text" name="Middle-name" placeholder="Middle Name" ></td>
+                </tr>
+                <tr>
+                    <td>Last Name: </td>
+                    <td><input id="txtLastName" class="input-items" type="text" name="Last-name" placeholder="Last Name" required></td>
+                </tr>
+                <tr>
+                    <td>Mobile Number: </td>
+                    <td><input id="Mobile" class="input-items" type="number" name="phn-number" placeholder="Mobile Number" required></td>
+                </tr>
+                <tr>
+                    <td>E-mail: </td>
+                    <td><input id="Email" class="input-items" type="email" name="Email" placeholder="E-mail" required></td>
+                </tr>
+                <tr>
+                    <td>Gender: </td>
+                    <td>Male<input id="optMale" class="input-items" type="radio" value="Male" name="gender" >
+                        Female<input id="optFemale" class="input-items" type="radio" value="Female" name="gender">
+                        Others<input id="optOthers" class="input-items" type="radio" value="Others" name="gender">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Country: </td>
+                    <td><input id="txtCountry" class="input-items" type="text" name="Country" placeholder="Country" required></td>                    
+                </tr>
+                <tr>
+                    <td>State: </td>
+                    <td><input id="txtState" class="input-items" type="text" name="State" placeholder="State" required></td>                    
+                </tr>
+                <tr>
+                    <td>District: </td>
+                    <td><input id="txtDistrict" class="input-items" type="text" name="District" placeholder="District" required></td>                    
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="Register" onclick="RegisterClick()"></td>
+                </tr>
+            </table>
+        </form>
+       
+        <footer class="foot"></footer>
+  </body>
+</html>
